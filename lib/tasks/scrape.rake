@@ -9,8 +9,8 @@ task :sample_title => :environment do
 url ='http://matome.naver.jp/tech'
 charset = nil
 
-opt = {}
-opt['User-Agent'] = 'Opera/9.80 (Windows NT 5.1; U; ja) Presto/2.7.62 Version/11.01 '
+# opt = {}
+# opt['User-Agent'] = 'Opera/9.80 (Windows NT 5.1; U; ja) Presto/2.7.62 Version/11.01 '
 
  html = open(url, :allow_redirections => :all) do |f|
  	charset = f.charset 
